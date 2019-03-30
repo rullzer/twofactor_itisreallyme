@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<info>
+	<id>twofactor_itisreallyme</id>
+	<name>Two-Factor Authentication made easy</name>
+	<summary>Allow users to finally use an easy to use two factor mechanism.</summary>
+	<description>Allow users to login to their Nextcloud using a user friendly method. As an exxtra checks users will be presented with a button they have to click and the text to only click this button if they are the actual user which makes sure no unauthorized access is granted.</description>
+	<version>0.0.1</version>
+	<licence>agpl</licence>
+	<author>Roeland Jago Douma</author>
+	<namespace>TwoFactorItIsReallyMe</namespace>
+	<category>security</category>
+
+	<website>https://github.com/rullzer/twofactor_itisreallyme</website>
+	<bugs>https://github.com/rullzer/twofactor_itisreallyme/issues</bugs>
+	<repository type="git">https://github.com/rullzer/twofactor_itisreallyme.git</repository>
+
+	<dependencies>
+		<database>sqlite</database>
+		<database>mysql</database>
+		<database>pgsql</database>
+		<nextcloud min-version="16" max-version="16" />
+	</dependencies>
+
+	<two-factor-providers>
+		<provider>OCA\TwoFactorItIsReallyMe\Provider\ItIsReallyMeProvider</provider>
+	</two-factor-providers>
+</info>
